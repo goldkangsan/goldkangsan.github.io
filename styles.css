@@ -1,0 +1,159 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* 헤더 스타일 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+
+/* 네비게이션 스타일 */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* 프로필 섹션 */
+.profile {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 180px;  /* 프로필 이미지 크기 */
+    height: auto;
+    border-radius: 10px; /* 네모 모양 유지 */
+    margin-right: 20px;
+}
+
+.bio {
+    max-width: 500px;
+}
+
+/* 소셜 링크 스타일 */
+.social-links {
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #007bff;
+}
+
+/* 모든 아이콘 기본 색상 */
+.social-link {
+    text-decoration: none;
+    color: #333; /* 모든 아이콘 기본 색상 동일 */
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+/* 일반 아이콘 hover 효과 (파란색) */
+.social-link:hover {
+    color: #007bff;
+}
+
+/* YouTube 아이콘만 hover 시 빨간색 */
+.social-link:hover .fa-youtube {
+    color: #ff0000;
+}
+
+/* 프로젝트 섹션 */
+.projects {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 프로젝트 카드 */
+.project-card {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    background: #e0e0e0;
+}
+
+/* 프로젝트 이미지 */
+.project-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+/* 프로젝트 내용 */
+.project-content {
+    flex: 1;
+}
+
+/* 프로젝트 부제목 */
+.project-subtitle {
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* 역할 태그 */
+.role-tag {
+    background: #eef3ff;
+    color: #1a3d8f;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
