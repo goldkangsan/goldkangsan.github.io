@@ -1,3 +1,8 @@
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
 /* 전체 페이지 스타일 */
 body {
     font-family: Arial, sans-serif;
@@ -80,10 +85,6 @@ nav a:hover {
     transition: color 0.3s;
 }
 
-.social-link:hover {
-    color: #007bff;
-}
-
 /* 모든 아이콘 기본 색상 */
 .social-link {
     text-decoration: none;
@@ -156,4 +157,14 @@ nav a:hover {
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
+}
+
+/* Fun 섹션 (Projects랑 동일한 스타일 적용) */
+.fun {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
 }
