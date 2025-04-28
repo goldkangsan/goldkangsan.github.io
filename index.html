@@ -6,6 +6,7 @@
     <title>Kangsan Keum</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css" />
 </head>
 <body>
     <header>
@@ -53,10 +54,11 @@
             <img src="Shcolar's Success.png" alt="EmoTilt Project" class="project-image">
             <div class="project-content">
                 <h3>Scholar's Success Drive: Donation matching service</h3>
-                <p class="project-subtitle">Project for Human Centered Computing (CS-00, Fall 2024)</p>
+                <p class="project-subtitle">Project for Human Centered Computing (CS 4875, Fall 2024)</p>
                 <p>
-                    This project focuses on enhancing interactions with iOS devices using the latest
-                    Nearby Interaction framework. It allows users to engage with devices in unique and creative ways.
+                    Developed a donation matching platform to provide essential academic supplies to students, teachers, and families facing resource shortages. 
+                    Designed key features such as Donations Near You, Community Interaction, and Donation Tracking to improve transparency and foster local engagement.
+        
                 </p>
                 <div class="role-tag">Role: UI/UX Design, Prototyping, Experimental Design</div>
             </div>
@@ -124,9 +126,10 @@
                 <h3>Wrtn 1st Gen AI Campus Leader</h3>
                 <p class="project-subtitle">Acting Member (Spring 2024)</p>
                 <p>
-                    Led AI adoption strategies and community building as a Wrtn AI Campus Leader.
+                    Designed and conducted IDI (In-Depth Interviews) with university students to explore patterns of AI tool adoption. 
+                    Based on the interview insights, planned and organized AI utilization workshops, promoted Wrtn’s AI assistant services, and contributed to Wrtn’s marketing and service refinement strategies.
                 </p>
-                <div class="role-tag">Role: Ideation, Prototyping, Experimental Design</div>
+                <div class="role-tag">Role: UX Research, Workshop Organization, Service Promotion</div>
             </div>
         </div>
 
@@ -136,21 +139,24 @@
                 <h3>SKY Union Presentation Society: InsightGraphy</h3>
                 <p class="project-subtitle">24th President (Fall 2023 ~ Spring 2024)</p>
                 <p>
-                    Enhanced communication skills and collaborative creativity through presentation events.
+                    Organized and led inter-university presentation competitions and internal seminars. 
+                    A notable project about "Baedal Teukgeup" (Baedal Special Delivery App), where our team proposed user experience enhancements and marketing strategies. 
+                    Emphasized logical communication and audience engagement techniques during team training sessions.
                 </p>
-                <div class="role-tag">Role: UI/UX Design, Presentation</div>
+                <div class="role-tag">Role: UI/UX Design, Presentation, Leadership, Communication</div>
             </div>
         </div>
 
         <div class="project-card">
-            <img src="Experimental Design.png" alt="Experimental Design" class="project-image">
+            <img src="Wetie.JPG" alt="Wetie networking" class="project-image">
             <div class="project-content">
                 <h3>Industrial and Management Engineering Academic Club: WeTIE</h3>
                 <p class="project-subtitle">13th Planning Director (Fall 2023 ~ Spring 2024)</p>
                 <p>
-                    Designed events and coordinated academic activities within the Industrial Engineering department.
+                    Led the planning and execution of an academic exchange event with Yonsei University’s Industrial Engineering Department, organizing seminars featuring faculty-led discussions on operations research and optimization. 
+                    Organized WeTIE’s first-ever Homecoming Day, coordinating logistics for over 45 attendees and facilitating networking between alumni and current students.
                 </p>
-                <div class="role-tag">Role: Ideation, Event Planning</div>
+                <div class="role-tag">Role: Event Planning, Academic Exchange, Alumni Networking</div>
             </div>
         </div>
 
@@ -160,25 +166,39 @@
                 <h3>Crimson Startup Support Group</h3>
                 <p class="project-subtitle">3rd Planning Team Member (Fall 2023)</p>
                 <p>
-                    Supported campus startup initiatives and event planning.
+                    Supported the planning and operation of startup networking events and programs at Korea University. 
+                    Contributed to participant management, event promotion, and the development of the campus startup ecosystem.
                 </p>
                 <div class="role-tag">Role: Ideation, Planning</div>
             </div>
         </div>
 
-        <div class="project-card">
-            <img src="SPAT.png" alt="SPAT Again" class="project-image">
-            <div class="project-content">
-                <h3>SPAT: Enhancing Online Course Completion</h3>
-                <p class="project-subtitle">Winter 2024</p>
-                <p>
-                    Organized study partner matching service to enhance online course engagement.
-                </p>
-                <div class="role-tag">Role: Ideation, Information Architecture</div>
-            </div>
-        </div>
-
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav ul li a');
+        
+            window.addEventListener('scroll', () => {
+                let current = '';
+        
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    if (pageYOffset >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+        
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+        </script>       
 
 </body>
 </html>
